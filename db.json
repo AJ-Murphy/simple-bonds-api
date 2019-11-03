@@ -10,5 +10,28 @@
     { "id": 8, "first_name": "karl", "last_name": "Cast" },
     { "id": 9, "first_name": "Taylor", "last_name": "Coke" },
     { "id": 10, "first_name": "Vincent", "last_name": "Tozier" }
+  ],
+
+  "bonds": [
+    {
+      "id": 1,
+      "name": "abc",
+      "duration_months": 1,
+      "quarterly_interest": 1,
+      "maturity_interest": 1
+    }
+  ],
+
+  "investments": [
+    {
+      "id": 1,
+      "investor_id": 1,
+      "bond_id": 1,
+      "type": "x",
+      "amount": 123,
+      "expected_return": 123,
+      "expected_profit": 123,
+      "status": "abc"
+    }
   ]
 }
