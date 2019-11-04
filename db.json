@@ -1,37 +1,208 @@
 {
   "investors": [
-    { "id": 1, "first_name": "Angeline", "last_name": "Allen" },
-    { "id": 2, "first_name": "Alden", "last_name": "Kallas" },
-    { "id": 3, "first_name": "Carline", "last_name": "Wood" },
-    { "id": 4, "first_name": "Joe", "last_name": "Wollard" },
-    { "id": 5, "first_name": "Randy", "last_name": "Patnode" },
-    { "id": 6, "first_name": "Keira", "last_name": "Montas" },
-    { "id": 7, "first_name": "Jazmine", "last_name": "Woolbright" },
-    { "id": 8, "first_name": "karl", "last_name": "Cast" },
-    { "id": 9, "first_name": "Taylor", "last_name": "Coke" },
-    { "id": 10, "first_name": "Vincent", "last_name": "Tozier" }
+    {
+      "id": 1,
+      "first_name": "Angeline",
+      "last_name": "Allen"
+    },
+    {
+      "id": 2,
+      "first_name": "Alden",
+      "last_name": "Kallas"
+    },
+    {
+      "id": 3,
+      "first_name": "Carline",
+      "last_name": "Wood"
+    },
+    {
+      "id": 4,
+      "first_name": "Joe",
+      "last_name": "Wollard"
+    },
+    {
+      "id": 5,
+      "first_name": "Randy",
+      "last_name": "Patnode"
+    }
   ],
-
   "bonds": [
     {
       "id": 1,
-      "name": "abc",
-      "duration_months": 1,
-      "quarterly_interest": 1,
-      "maturity_interest": 1
+      "name": "XYZ Group",
+      "duration_months": 9,
+      "quarterly_interest": 0.0901,
+      "maturity_interest": 0.0639
+    },
+    {
+      "id": 2,
+      "name": "Walter LLC",
+      "duration_months": 12,
+      "quarterly_interest": 0.0573,
+      "maturity_interest": 0.0943
+    },
+    {
+      "id": 3,
+      "name": "Haley Group",
+      "duration_months": 4,
+      "quarterly_interest": 0.0234,
+      "maturity_interest": 0.0046
+    },
+    {
+      "id": 4,
+      "name": "Armstrong",
+      "duration_months": 8,
+      "quarterly_interest": 0.0945,
+      "maturity_interest": 0.0456
+    },
+    {
+      "id": 5,
+      "name": "Jenkins & Co",
+      "duration_months": 6,
+      "quarterly_interest": 0.0843,
+      "maturity_interest": 0.0323
+    },
+    {
+      "id": 6,
+      "name": "Blizzard",
+      "duration_months": 9,
+      "quarterly_interest": 0.0845,
+      "maturity_interest": 0.0664
+    },
+    {
+      "id": 7,
+      "name": "Russell Ltd",
+      "duration_months": 5,
+      "quarterly_interest": 0.0454,
+      "maturity_interest": 0.0964
+    },
+    {
+      "id": 8,
+      "name": "Lender LLC",
+      "duration_months": 9,
+      "quarterly_interest": 0.0901,
+      "maturity_interest": 0.0639
+    },
+    {
+      "id": 9,
+      "name": "Harvey Inc",
+      "duration_months": 9,
+      "quarterly_interest": 0.0901,
+      "maturity_interest": 0.0639
     }
   ],
-
   "investments": [
     {
       "id": 1,
-      "investor_id": 1,
-      "bond_id": 1,
-      "type": "x",
-      "amount": 123,
-      "expected_return": 123,
-      "expected_profit": 123,
-      "status": "abc"
+      "data": [
+        {
+          "id": 1,
+          "investor_id": 1,
+          "bond_id": 4,
+          "type": "maturity",
+          "amount": 30000,
+          "expected_return": 3091200,
+          "expected_profit": 91200,
+          "status": "committed",
+          "bond_name": "Armstrong"
+        },
+        {
+          "id": 2,
+          "investor_id": 1,
+          "bond_id": 2,
+          "type": "quarterly",
+          "amount": 30000,
+          "expected_return": 3171900,
+          "expected_profit": 171900,
+          "status": "pending",
+          "bond_name": "Walter LLC"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "data": [
+        {
+          "id": 1,
+          "investor_id": 2,
+          "bond_id": 7,
+          "type": "maturity",
+          "amount": 40000,
+          "expected_return": 4160667,
+          "expected_profit": 160667,
+          "status": "committed",
+          "bond_name": "Russell Ltd"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "data": [
+        {
+          "id": 1,
+          "investor_id": 3,
+          "bond_id": 4,
+          "type": "maturity",
+          "amount": 35000,
+          "expected_return": 3505367,
+          "expected_profit": 505367,
+          "status": "pending",
+          "bond_name": "Haley Group"
+        },
+        {
+          "id": 2,
+          "investor_id": 3,
+          "bond_id": 8,
+          "type": "maturity",
+          "amount": 20000,
+          "expected_return": 2095850,
+          "expected_profit": 95850,
+          "status": "pending",
+          "bond_name": "Lender LLC"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "data": [
+        {
+          "id": 1,
+          "investor_id": 4,
+          "bond_id": 5,
+          "type": "Quarterly",
+          "amount": 35792,
+          "expected_return": 3730063,
+          "expected_profit": 730063,
+          "status": "committed",
+          "bond_name": "Jenkins & Co"
+        },
+        {
+          "id": 2,
+          "investor_id": 4,
+          "bond_id": 2,
+          "type": "Quarterly",
+          "amount": 38000,
+          "expected_return": 4056785,
+          "expected_profit": 256785,
+          "status": "committed",
+          "bond_name": "XYZ Group"
+        },
+        {
+          "id": 2,
+          "investor_id": 4,
+          "bond_id": 2,
+          "type": "Quarterly",
+          "amount": 10000,
+          "expected_return": 1063000,
+          "expected_profit": 63000,
+          "status": "pending",
+          "bond_name": "Armstrong"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "data": []
     }
   ]
 }
